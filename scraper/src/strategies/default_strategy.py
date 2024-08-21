@@ -144,7 +144,7 @@ class DefaultStrategy(AbstractStrategy):
                     'level': self.get_level_weight(current_level),
                     'position': position
                 },
-                'url': current_page_url,
+                'url': current_page_url.replace("http://localhost:3000", ""),
                 'url_without_variables': current_page_url
             }
 
